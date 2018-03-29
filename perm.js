@@ -35,7 +35,7 @@ client.on('message', message => {
 
 // playing
 client.on('ready', () => {
-                                                                                                                                                                                                                                                                              client.user.setGame(`/help | atomicbot | تم الاشتراك ببوت البرميوم | Created By PITAR`,'https://www.twitch.tv/v5bz');
+                                                                                                                                                                                                                                                                              client.user.setGame(`f!help | UNAVAILABLE | تم الاشتراك ببوت البرميوم | Created By PITAR`,'https://www.twitch.tv/v5bz');
 });
 
 
