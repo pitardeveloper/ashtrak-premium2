@@ -72,7 +72,7 @@ message.author.send("اشتراك برميوم للبوت العربي" + `  **
 تم الاشتراك في هاذا البوت لمدة 1 سنة
 تاريخ انتهاء صلاحية البوت البرميوم : 29 /  03 /2019
 رابط اضافة البوت العربي 
-[]
+[https://discordapp.com/oauth2/authorize?client_id=428886607735554049&scope=bot&permissions=2146958591]
 موقع البوت العربي : 
 [https://arabicobot.wixsite.com/arabicobot]
 مبرمج البوت العربي [ＰＩＴＡＲ ＩＳ ＨＥＲＥ#5333]
@@ -238,7 +238,7 @@ client.on('message' , message => {
  .setThumbnail(client.user.avatarURL)
  .setAuthor(message.author.username, message.author.avatarURL)
  .setTitle('اظعط هنا لدعوة البوت الى سيرفرك')
- .setURL('')
+ .setURL('https://discordapp.com/oauth2/authorize?client_id=428886607735554049&scope=bot&permissions=2146958591')
   message.channel.sendEmbed(embed);
    }
 });
