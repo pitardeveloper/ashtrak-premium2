@@ -35,12 +35,12 @@ client.on('message', message => {
 
 // playing
 client.on('ready', () => {
-                                                                                                                                                                                                                                                                              client.user.setGame(`f!help | UNAVAILABLE | تم الاشتراك ببوت البرميوم | Created By PITAR`,'https://www.twitch.tv/v5bz');
+                                                                                                                                                                                                                                                                              client.user.setGame(`،help | UNAVAILABLE | تم الاشتراك ببوت البرميوم | Created By PITAR`,'https://www.twitch.tv/v5bz');
 });
 
 
 client.on("message", msg => {
-           var prefix = "f!";
+           var prefix = "،";
   if(msg.content.startsWith (prefix + "id")) {
     if(!msg.channel.guild) return msg.reply('**:x: اسف لكن هذا الامر للسيرفرات فقط **');         
       const embed = new Discord.RichEmbed();
@@ -61,7 +61,7 @@ client.on("message", msg => {
 
 
 client.on('message', message => {
-     if (message.content === "f!help") {
+     if (message.content === "،help") {
 message.author.send("اشتراك برميوم للبوت العربي" + `  **
 ╭━━━╮╱╱╱╱╭╮╱╱╱╱╱╱╱╱╭━━╮╱╱╱╭╮╱╭━━━╮
 ┃╭━╮┃╱╱╱╱┃┃╱╱╱╱╱╱╱╱┃╭╮┃╱╱╭╯╰╮┃╭━╮┃
@@ -82,28 +82,28 @@ message.author.send("اشتراك برميوم للبوت العربي" + `  **
 
 
 client.on('message', message => {
-     if (message.content === "f!help") {
+     if (message.content === "،help") {
 message.author.send("" + `  **
 "اوامر عامة"
-f!id           / يجيب معلومات حسابك
+،id           / يجيب معلومات حسابك
 "اوامر السيرفرات"
-f!server       / يجيب معلومات السيرفر
-f!ban          / يبند لك شخص معين
-f!kick         / يعطي كيك لشخص معين
-f!mute         / يعطي شخص ميوت
-f!unmute       / يشيل الميوت عن الشخص
-f!bc           / لارسال برود كاست 
-f!clear        / لحذف جميع الرسائل
-f!ct           / يسوي روم كتابي
-f!cv           / يسوي روم صوتي
+،server       / يجيب معلومات السيرفر
+،ban          / يبند لك شخص معين
+،kick         / يعطي كيك لشخص معين
+،mute         / يعطي شخص ميوت
+،unmute       / يشيل الميوت عن الشخص
+،bc           / لارسال برود كاست 
+،clear        / لحذف جميع الرسائل
+،ct           / يسوي روم كتابي
+،cv           / يسوي روم صوتي
 
 "استضافات"
 لا يوجد استضافات
 "اوامر البوت" 
-f!bot               / عدد السيرفرات التي تستخدم البوت
-f!invite            / لاضافة البوت الى سيرفرك
-f!support           / لدخول سيرفر المساعدة الخاص بالبوت
-f!contact           / لارسال رسالة الى صاحب البوت
+،bot               / عدد السيرفرات التي تستخدم البوت
+،invite            / لاضافة البوت الى سيرفرك
+،support           / لدخول سيرفر المساعدة الخاص بالبوت
+،contact           / لارسال رسالة الى صاحب البوت
 f!website           / لدخول موقع البوت العربي 
 "الدعم الفني"
 :gear:          https://discord.gg/ZPzcRfu    | سيرفر الدعم 
@@ -115,9 +115,8 @@ f!website           / لدخول موقع البوت العربي
 
 // -ping
    client.on('message', message => {
-     if (message.content === "f!ping") {
-      const embed = new Discord.RichEmbed()
- 
+     if (message.content === "،ping") {
+      const embed = new Discord.RichEmbed()،
   .setColor("#FF0000")
   .addField('``سرعة أتصال الــبوت`` ' , `${Date.now() - message.createdTimestamp}` + ' ms`')
 
@@ -127,7 +126,7 @@ f!website           / لدخول موقع البوت العربي
 
 
 // -say
-var prefix = "f!";
+var prefix = "،";
 
 client.on('message', message => {
   if (message.author.bot) return;
@@ -160,7 +159,7 @@ if (command == "embed") {
 });
 
  client.on('message', function(msg) {
-         var prefix = "f!"
+         var prefix = "،"
     if(msg.content.startsWith (prefix  + 'server')) {
       let embed = new Discord.RichEmbed()
       .setColor('RANDOM')
@@ -182,7 +181,7 @@ if (command == "embed") {
 
 
    client.on('message', message => {
-     if (message.content === "f!help") {
+     if (message.content === "،help") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
                .setFooter(`مشترك Premium`, 'https://images-ext-2.discordapp.net/external/lrVzKt7T8b5JZz-VcYfH6ICQtHA0Bj8_AXkq_JO2ZX8/https/cdn.discordapp.com/attachments/411548285740908551/411550507363074048/6k0g8EYs.jpg')
@@ -197,7 +196,7 @@ if (command == "embed") {
 
 
 client.on("message", message => {
-    var prefix = "f!";
+    var prefix = "،";
  
             var args = message.content.substring(prefix.length).split(" ");
             if (message.content.startsWith(prefix + "clear")) {
@@ -232,7 +231,7 @@ client.on('message', message => {
 
 
 client.on('message' , message => {
-    if (message.content === "f!invite") {
+    if (message.content === "،invite") {
         if(!message.channel.guild) return message.reply('This Command is Only For Servers');
      const embed = new Discord.RichEmbed()
  .setColor("RANDOM")
@@ -246,7 +245,7 @@ client.on('message' , message => {
 
 
 client.on('message' , message => {
-    if (message.content === "f!support") {
+    if (message.content === "،support") {
         if(!message.channel.guild) return message.reply('This Command is Only For Servers');
      const embed = new Discord.RichEmbed()
  .setColor("RANDOM")
@@ -260,7 +259,7 @@ client.on('message' , message => {
 
 
 client.on('message', message => {
-    if(message.content === "f!bot") {
+    if(message.content === "،bot") {
         const embed = new Discord.RichEmbed()
         .setColor("#00FFFF")
         .setDescription(`**السيرفرات**?? **__${client.guilds.size}__**
@@ -272,7 +271,7 @@ client.on('message', message => {
 
 
 client.on("message", (message) => {
-if (message.content.startsWith("f!ct")) {
+if (message.content.startsWith("،ct")) {
             if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
         let args = message.content.split(" ").slice(1);
     message.guild.createChannel(args.join(' '), 'text');
@@ -283,7 +282,7 @@ message.channel.sendMessage('تـم إنـشاء روم كـتابـي')
 
 
 client.on("message", (message) => {
-if (message.content.startsWith("f!cv")) {
+if (message.content.startsWith("،cv")) {
             if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
         let args = message.content.split(" ").slice(1);
     message.guild.createChannel(args.join(' '), 'voice');
@@ -299,7 +298,7 @@ client.on("message", message => {
   
   let command = message.content.split(" ")[0];
   
-  if (command === "f!mute") {
+  if (command === "،mute") {
         if (!message.member.hasPermission('MANAGE_ROLES')) return message.reply("** لا يوجد لديك برمشن 'Manage Roles' **").catch(console.error);
   let user = message.mentions.users.first();
   let modlog = client.channels.find('name', 'console');
@@ -335,7 +334,7 @@ return message.reply("**:white_check_mark: .. تم اعطاء العضو ميو�
   
   let command = message.content.split(" ")[0];
   
-  if (command === "f!unmute") {
+  if (command === "،unmute") {
         if (!message.member.hasPermission('MANAGE_ROLES')) return message.reply("** لا يوجد لديك برمشن 'Manage Roles' **").catch(console.error);
   let user = message.mentions.users.first();
   let modlog = client.channels.find('name', 'console');
@@ -366,7 +365,7 @@ return message.reply("**:white_check_mark: .. تم فك الميوت عن الش
 
 client.on('message', message => {
 
-       if(message.content === prefix + "f!mutechannel") {
+       if(message.content === prefix + "،mutechannel") {
                            if(!message.channel.guild) return message.reply('** This command only for servers**');
 
    if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' **__ليس لديك صلاحيات__**');
@@ -378,7 +377,7 @@ client.on('message', message => {
               });
                 }
 //viper
-    if(message.content === prefix + "f!unmutechannel") {
+    if(message.content === prefix + "،unmutechannel") {
                         if(!message.channel.guild) return message.reply('** This command only for servers**');
 
    if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('**__ليس لديك صلاحيات__**');
@@ -395,7 +394,7 @@ client.on('message', message => {
 });
 
 
-var prefix = "f!"
+var prefix = "،"
 client.on('message', message => {
   if (message.author.x5bz) return;
   if (!message.content.startsWith(prefix)) return;
@@ -437,7 +436,7 @@ client.on('message', message => {
  
 
  
-var prefix = "f!"
+var prefix = "،"
 client.on('message', message => {
   if (message.author.x5bz) return;
   if (!message.content.startsWith(prefix)) return;
@@ -478,7 +477,7 @@ client.on('message', message => {
 });
 
 
-var prefix = "!"
+var prefix = "،"
 client.on('message', message => {
 
   if (message.content.startsWith(prefix + "contact")) {
@@ -496,7 +495,7 @@ client.on('message', message => {
   
   
   client.on('message' , message => {
-    if (message.content === "!website") {
+    if (message.content === "،website") {
         if(!message.channel.guild) return message.reply('This Command is Only For Servers');
      const embed = new Discord.RichEmbed()
  .setColor("RANDOM")
