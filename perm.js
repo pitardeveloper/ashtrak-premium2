@@ -116,7 +116,7 @@ f!website           / لدخول موقع البوت العربي
 // -ping
    client.on('message', message => {
      if (message.content === "،ping") {
-      const embed = new Discord.RichEmbed()،
+      const embed = new Discord.RichEmbed()
   .setColor("#FF0000")
   .addField('``سرعة أتصال الــبوت`` ' , `${Date.now() - message.createdTimestamp}` + ' ms`')
 
